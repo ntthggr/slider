@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Slider</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="images">
+				<img src="/img/bg-1.jpeg" alt="" />
+				<img src="/img/bg-2.jpeg" alt="" />
+				<img src="/img/bg-3.jpeg" alt="" />
+				<img src="/img/bg-4.jpeg" alt="" />
+				<img src="/img/bg-5.jpeg" alt="" />
+			</div>
+			<div onclick="side_slide(-1)" class="slide left">
+				<span class="bx bx-chevron-left"></span>
+			</div>
+			<div onclick="side_slide(1)" class="slide right">
+				<span class="bx bx-chevron-right"></span>
+			</div>
+			<div class="btm-sliders">
+				<span onclick="btm_slide(1)"></span>
+				<span onclick="btm_slide(2)"></span>
+				<span onclick="btm_slide(3)"></span>
+				<span onclick="btm_slide(4)"></span>
+				<span onclick="btm_slide(5)"></span>
+			</div>
+		</div>
+		<script src="/script.js"></script>
+	</body>
+</html>
